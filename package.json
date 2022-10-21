@@ -1,9 +1,9 @@
 {
   "name": "@mcwmengxi/eslint-config-pnpm",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "private": true,
   "packageManager": "pnpm@7.13.4",
-  "author": "qx <1395568275@qq.com> (https://github.com/mcwmengxi/)",
+  "author": "qx <m1395568275@163.com> (https://github.com/mcwmengxi/)",
   "license": "MIT",
   "scripts": {
     "lint": "eslint .",

@@ -1,8 +1,8 @@
 {
   "name": "@mcwmengxi/eslint-config",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "ESLint config",
-  "author": "qx <1395568275@qq.com> (https://github.com/mcwmengxi/)",
+  "author": "qx <m1395568275@163.com> (https://github.com/mcwmengxi/)",
   "homepage": "https://github.com/mcwmengxi/eslint-config",
   "license": "MIT",
   "keywords": [
