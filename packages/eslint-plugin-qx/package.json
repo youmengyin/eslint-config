@@ -1,8 +1,7 @@
 {
   "name": "eslint-plugin-qx",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "license": "MIT",
-  "author": "qx <1395568275@qq.com> (https://github.com/mcwmengxi/)",
   "homepage": "https://github.com/mcwmengxi/eslint-config",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
