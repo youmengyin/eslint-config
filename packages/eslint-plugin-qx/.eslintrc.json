@@ -1,5 +1,5 @@
 {
-  "extends": "@mcwmengxi",
+  "extends": "@dongamoy",
   "plugins": [
     "qx"
   ]

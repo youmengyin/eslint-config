@@ -4,13 +4,13 @@ importers:
 
   .:
     specifiers:
-      '@mcwmengxi/eslint-config': '*'
+      '@dongamoy/eslint-config': '*'
       bumpp: ^8.2.1
       eslint: ^8.23.0
       eslint-plugin-qx: workspace:*
       typescript: ^4.8.2
     devDependencies:
-      '@mcwmengxi/eslint-config': link:packages/all
+      '@dongamoy/eslint-config': link:packages/all
       bumpp: 8.2.1
       eslint: 8.25.0
       eslint-plugin-qx: link:packages/eslint-plugin-qx
@@ -18,7 +18,7 @@ importers:
 
   packages/all:
     specifiers:
-      '@mcwmengxi/eslint-config-vue': workspace:*
+      '@dongamoy/eslint-config-vue': workspace:*
       '@typescript-eslint/eslint-plugin': ^5.36.1
       '@typescript-eslint/parser': ^5.36.1
       eslint: ^8.23.0
@@ -34,7 +34,7 @@ importers:
       jsonc-eslint-parser: ^2.1.0
       yaml-eslint-parser: ^1.1.0
     dependencies:
-      '@mcwmengxi/eslint-config-vue': link:../vue
+      '@dongamoy/eslint-config-vue': link:../vue
       '@typescript-eslint/eslint-plugin': 5.40.1_vcunoyu347gmi72pwsm7mdvjca
       '@typescript-eslint/parser': 5.40.1_eslint@8.25.0
       eslint-plugin-eslint-comments: 3.2.0_eslint@8.25.0
@@ -95,14 +95,14 @@ importers:
 
   packages/react:
     specifiers:
-      '@mcwmengxi/eslint-config-ts': workspace:*
+      '@dongamoy/eslint-config-ts': workspace:*
       eslint: ^8.23.0
       eslint-plugin-react: ^7.31.1
       eslint-plugin-react-hooks: ^4.6.0
       react: ^18.2.0
       typescript: ^4.8.2
     dependencies:
-      '@mcwmengxi/eslint-config-ts': link:../typescript
+      '@dongamoy/eslint-config-ts': link:../typescript
       eslint-plugin-react: 7.31.10_eslint@8.25.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.25.0
     devDependencies:
@@ -112,12 +112,12 @@ importers:
 
   packages/typescript:
     specifiers:
-      '@mcwmengxi/eslint-config-basic': workspace:*
+      '@dongamoy/eslint-config-basic': workspace:*
       '@typescript-eslint/eslint-plugin': ^5.36.1
       '@typescript-eslint/parser': ^5.36.1
       eslint: ^8.23.0
     dependencies:
-      '@mcwmengxi/eslint-config-basic': link:../basic
+      '@dongamoy/eslint-config-basic': link:../basic
       '@typescript-eslint/eslint-plugin': 5.40.1_vcunoyu347gmi72pwsm7mdvjca
       '@typescript-eslint/parser': 5.40.1_eslint@8.25.0
     devDependencies:
@@ -125,11 +125,11 @@ importers:
 
   packages/vue:
     specifiers:
-      '@mcwmengxi/eslint-config-ts': workspace:*
+      '@dongamoy/eslint-config-ts': workspace:*
       eslint: ^8.23.0
       eslint-plugin-vue: ^9.4.0
     dependencies:
-      '@mcwmengxi/eslint-config-ts': link:../typescript
+      '@dongamoy/eslint-config-ts': link:../typescript
       eslint-plugin-vue: 9.6.0_eslint@8.25.0
     devDependencies:
       eslint: 8.25.0
