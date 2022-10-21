@@ -1,6 +1,6 @@
 {
-  "name": "@mcwmengxi/eslint-config-react",
-  "version": "0.2.3",
+  "name": "@dongamoy/eslint-config-react",
+  "version": "0.2.4",
   "description": "",
   "license": "MIT",
   "author": "qx <m1395568275@163.com> (https://github.com/mcwmengxi/)",
@@ -19,7 +19,7 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@mcwmengxi/eslint-config-ts": "workspace:*",
+    "@dongamoy/eslint-config-ts": "workspace:*",
     "eslint-plugin-react": "^7.31.1",
     "eslint-plugin-react-hooks": "^4.6.0"
   },

@@ -1,6 +1,6 @@
 {
-  "name": "@mcwmengxi/eslint-config-ts",
-  "version": "0.2.3",
+  "name": "@dongamoy/eslint-config-ts",
+  "version": "0.2.4",
   "description": "",
   "license": "MIT",
   "author": "qx <m1395568275@163.com> (https://github.com/mcwmengxi/)",
@@ -17,7 +17,7 @@
     "typescript": ">=3.9"
   },
   "dependencies": {
-    "@mcwmengxi/eslint-config-basic": "workspace:*",
+    "@dongamoy/eslint-config-basic": "workspace:*",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1"
   },

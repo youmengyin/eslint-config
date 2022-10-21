@@ -1,6 +1,6 @@
 {
-  "name": "@mcwmengxi/eslint-config-pnpm",
-  "version": "0.2.3",
+  "name": "@dongamoy/eslint-config-pnpm",
+  "version": "0.2.4",
   "private": true,
   "packageManager": "pnpm@7.13.4",
   "author": "qx <m1395568275@163.com> (https://github.com/mcwmengxi/)",
@@ -12,7 +12,7 @@
     "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
   },
   "devDependencies": {
-    "@mcwmengxi/eslint-config": "*",
+    "@dongamoy/eslint-config": "*",
     "bumpp": "^8.2.1",
     "eslint": "^8.23.0",
     "eslint-plugin-qx": "workspace:*",
