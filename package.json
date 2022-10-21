@@ -1,6 +1,6 @@
 {
   "name": "@dongamoy/eslint-config-pnpm",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "private": true,
   "packageManager": "pnpm@7.13.4",
   "author": "qx <m1395568275@163.com> (https://github.com/mcwmengxi/)",
