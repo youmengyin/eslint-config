@@ -1,6 +1,6 @@
 {
-  "name": "@qx/eslint-config",
-  "version": "0.1.10",
+  "name": "@mcwmengxi/eslint-config",
+  "version": "0.2.0",
   "description": "ESLint config",
   "author": "qx <1395568275@qq.com> (https://github.com/mcwmengxi/)",
   "homepage": "https://github.com/mcwmengxi/eslint-config",
@@ -16,7 +16,7 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@qx/eslint-config-vue": "workspace:*",
+    "@mcwmengxi/eslint-config-vue": "workspace:*",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",
     "eslint-plugin-eslint-comments": "^3.2.0",

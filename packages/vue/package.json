@@ -1,6 +1,6 @@
 {
-  "name": "@qx/eslint-config-vue",
-  "version": "0.1.10",
+  "name": "@mcwmengxi/eslint-config-vue",
+  "version": "0.2.0",
   "description": "",
   "author": "qx <1395568275@qq.com> (https://github.com/mcwmengxi/)",
   "homepage": "https://github.com/mcwmengxi/eslint-config",
@@ -16,7 +16,7 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@qx/eslint-config-ts": "workspace:*",
+    "@mcwmengxi/eslint-config-ts": "workspace:*",
     "eslint-plugin-vue": "^9.4.0"
   },
   "devDependencies": {
