@@ -253,14 +253,14 @@ export const configVue = (options: ConfigVueOptions = {}): TypedConfigItem[] => 
   }
   return [
     {
-      name: 'qx/vue/setup',
+      name: 'whbw/vue/setup',
       plugins: {
         '@typescript-eslint': pluginTypeScript,
         vue: pluginVue,
       },
     },
     {
-      name: 'qx/vue/rules',
+      name: 'whbw/vue/rules',
       files,
       processor: getVueProcessor(),
       languageOptions: {

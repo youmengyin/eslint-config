@@ -32,10 +32,10 @@ const strictRules: TypedConfigItem['rules'] = {
 export const configJavaScript = (options: ConfigJavaScriptOptions={}):TypedConfigItem[] => [
   {
     ...js.configs.recommended,
-    name: 'qx/js/recommended'
+    name: 'whbw/js/recommended'
   },
   {
-    name: 'qx/js/core',
+    name: 'whbw/js/core',
     languageOptions: {
       sourceType: 'module',
       globals: {
@@ -232,7 +232,7 @@ export const configJavaScript = (options: ConfigJavaScriptOptions={}):TypedConfi
 
 export const configJSX = (): TypedConfigItem[] => [
     {
-      name: 'qx/jsx',
+      name: 'whbw/jsx',
       files: [GLOB_JSX_ONLY],
       languageOptions: {
         parserOptions: {

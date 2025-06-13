@@ -1,5 +1,5 @@
 {
-  "name": "@qx/eslint-config",
+  "name": "@whbw/eslint-config",
   "version": "1.0.0",
   "packageManager": "pnpm@9.12.3",
   "description": "eslint config",
@@ -7,7 +7,7 @@
     "eslint",
     "eslint-config"
   ],
-  "author": "qx <m1395568275@163.com> (https://github.com/mcwmengxi/)",
+  "author": "mcwmengxi <m1395568275@163.com> (https://github.com/mcwmengxi/)",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -27,12 +27,11 @@
   },
   "scripts": {
     "lint": "eslint --cache .",
-    "prepare": "pnpm -r run stub",
     "build": "tsdown",
     "generate:type": "tsx scripts/generateType.ts",
     "release": "run-s release:check release:version release:publish",
     "release:check": "run-s build typecheck",
-    "release:publish": "pnpm publish --tag",
+    "release:publish": "pnpm publish --tag latest --no-git-checks",
     "release:version": "bumpp",
     "typecheck": "tsc --noEmit"
   },

@@ -1860,5 +1860,5 @@ type PrettierPrettier = []|[{
   [k: string]: unknown | undefined
 }]
 // Names of all the configs
-       export type ConfigNames = 'qx/js/recommended' | 'qx/js/core' | 'qx/jsx' | 'qx/ts/setup' | 'qx/ts/parser' | 'qx/ts/rules' | 'qx/ts/types' | 'qx/prettier' | 'qx/prettier/disabled'
+       export type ConfigNames = 'whbw/js/recommended' | 'whbw/js/core' | 'whbw/jsx' | 'whbw/ts/setup' | 'whbw/ts/parser' | 'whbw/ts/rules' | 'whbw/ts/types' | 'whbw/prettier' | 'whbw/prettier/disabled'
        

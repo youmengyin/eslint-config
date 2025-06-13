@@ -134,7 +134,7 @@ export const configTypeScript = (
       ...parserOptions,
     }
     const parserConfig: TypedConfigItem = {
-      name: `qx/ts/${enableTypeAware ? 'parser-type-aware' : 'parser'}`,
+      name: `whbw/ts/${enableTypeAware ? 'parser-type-aware' : 'parser'}`,
       files,
       ignores: [...ignores],
       languageOptions: {
@@ -146,7 +146,7 @@ export const configTypeScript = (
   }
   return [
     {
-      name: 'qx/ts/setup',
+      name: 'whbw/ts/setup',
       plugins: {
         '@typescript-eslint': pluginTypeScript,
       },
@@ -158,7 +158,7 @@ export const configTypeScript = (
         ]
       : [createParserConfig(false, files)]),
     {
-      name: 'qx/ts/rules',
+      name: 'whbw/ts/rules',
       files,
       rules: {
         ...recommendedRules,
@@ -269,7 +269,7 @@ export const configTypeScript = (
     },
     ...(enableTypeAwareLint ? [
       {
-        name: 'qx/ts/rules/type-aware',
+        name: 'whbw/ts/rules/type-aware',
         files: [...filesTypeAware],
         ignores: [...ignoresTypeAware],
         rules: {
@@ -281,7 +281,7 @@ export const configTypeScript = (
       },
     ] satisfies TypedConfigItem[] : []),
     {
-      name: 'qx/ts/types',
+      name: 'whbw/ts/types',
       files: [...GLOB_TYPES],
       rules: {
         '@typescript-eslint/no-use-before-define': 'off',

@@ -37,7 +37,7 @@ export const configPrettier = (options: ConfigPrettierOptions = {}): TypedConfig
   } = options 
   return [
   {
-    name: 'qx/prettier',
+    name: 'whbw/prettier',
     plugins: {
       prettier: pluginPrettier
     },
@@ -89,7 +89,7 @@ export const configPrettier = (options: ConfigPrettierOptions = {}): TypedConfig
    * @zh 目前 prettier 不支持的语言
    */
   {
-    name: 'qx/prettier/disabled',
+    name: 'whbw/prettier/disabled',
     files: [...disabledFiles, ...userDisabledFiles],
     plugins: {
       prettier: pluginPrettier,
