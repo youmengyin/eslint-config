@@ -1,21 +1,63 @@
 {
-  "name": "@dongamoy/eslint-config-pnpm",
-  "version": "0.2.6",
-  "private": true,
-  "packageManager": "pnpm@7.13.4",
+  "name": "@qx/eslint-config",
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.12.3",
+  "description": "eslint config",
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
   "author": "qx <m1395568275@163.com> (https://github.com/mcwmengxi/)",
   "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./package.json": "./dist/package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "lint": "eslint .",
-    "test": "pnpm -r run test",
+    "lint": "eslint --cache .",
     "prepare": "pnpm -r run stub",
-    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
+    "build": "tsdown",
+    "generate:type": "tsx scripts/generateType.ts",
+    "release": "run-s release:check release:version release:publish",
+    "release:check": "run-s build typecheck",
+    "release:publish": "pnpm publish --tag",
+    "release:version": "bumpp",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@dongamoy/eslint-config": "*",
-    "bumpp": "^8.2.1",
-    "eslint": "^8.23.0",
-    "eslint-plugin-qx": "workspace:*",
-    "typescript": "^4.8.2"
+    "@types/node": "^22.15.30",
+    "bumpp": "^10.1.1",
+    "consola": "^3.4.2",
+    "eslint": "^9.28.0",
+    "eslint-typegen": "^2.2.0",
+    "jiti": "^2.4.2",
+    "npm-run-all2": "^8.0.4",
+    "tsdown": "^0.12.7",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.28.0",
+    "eslint-flat-config-utils": "^2.1.0",
+    "eslint-merge-processors": "^2.0.0",
+    "eslint-plugin-prettier": "^5.4.1",
+    "eslint-plugin-vue": "^10.2.0",
+    "eslint-processor-vue-blocks": "^2.0.0",
+    "globals": "^16.2.0",
+    "local-pkg": "^1.1.1",
+    "prettier": "^3.5.3",
+    "typescript-eslint": "^8.33.1",
+    "vue-eslint-parser": "^10.1.3"
   }
 }
