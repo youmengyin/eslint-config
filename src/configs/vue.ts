@@ -106,7 +106,7 @@ const unCategorizedRules: TypedConfigItem['rules'] = {
   'vue/component-api-style': ['error', ['script-setup', 'composition']],
   'vue/component-name-in-template-casing': [
     'error',
-    'PascalCase',
+    ['PascalCase' , "kebab-case" , "camelCase"],
     {
       ignores: ['slot', 'component'],
 
